@@ -31,11 +31,8 @@ fun main(args: Array<String>) {
 
     // Задание 6
     fun fibonacci(num: Int): Int{
-      //  if (num == 1 || num == 2) return 1
-       // else{
-            val result = ((Math.pow(1.618034, num.toDouble()) - Math.pow(1 - 1.618034, num.toDouble())) / Math.sqrt(5.0)).toInt()
-            return result
-       // }
+        val result = ((Math.pow(1.618034, num.toDouble()) - Math.pow(1 - 1.618034, num.toDouble())) / Math.sqrt(5.0)).toInt()
+        return result
     }
     println(fibonacci(10))
 }
